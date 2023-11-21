@@ -3,24 +3,24 @@ import React, { useState, useEffect } from 'react';
 import ProductTable from './components/ProductTable';
 import AvailableProducts from './components/AvailableProducts';
 import TotalDetails from './components/TotalDetails';
-import './App.css';  // Importar un archivo de estilos CSS
+import './App.css';  
 
 const App = () => {
 
   
-  // Estado inicial tomando los productos del localStorage o un array vacío si no hay datos almacenados
+  
   const [selectedProducts, setSelectedProducts] = useState(
     JSON.parse(localStorage.getItem('selectedProducts')) || []
   );
 
-  // Función para actualizar el estado y el localStorage cuando se modifican los productos
+ 
   const updateSelectedProducts = (newProducts) => {
     setSelectedProducts(newProducts);
     localStorage.setItem('selectedProducts', JSON.stringify(newProducts));
   };
 
   const addProduct = (product) => {
-    // Verificar si el producto ya está en la lista
+   
     const existingProduct = selectedProducts.find((p) => p.id === product.id);
 
     if (existingProduct) {
@@ -45,13 +45,13 @@ const App = () => {
     updateSelectedProducts(updatedProducts);
   };
 
-  // Efecto para cargar los productos almacenados al montar el componente
+
   useEffect(() => {
     const storedProducts = JSON.parse(localStorage.getItem('selectedProducts'));
     if (storedProducts) {
       setSelectedProducts(storedProducts);
     }
-  }, []); // El segundo argumento [] asegura que este efecto se ejecute solo una vez al montar el componente
+  }, []); 
 
   return (
     <div className="app-container">

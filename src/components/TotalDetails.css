@@ -1,36 +1,35 @@
 .total-details-container {
-    background-color: #3381b5;  /* Color de fondo celeste para TotalDetails */
-    color: #fff;  /* Texto blanco */
-    border: 1px solid #ddd;  /* Borde del contenedor */
-    padding: 15px;  /* Espaciado interno */
-    box-sizing: border-box;  /* Incluir el padding en el cálculo del tamaño del elemento */
-    max-width: 400px; /* Ajustar el ancho máximo del contenedor según sea necesario */
-    margin: 0 auto; /* Centrar el contenedor */
+    background-color: #00233b;  
+    color: #fff;  
+    border: 0px solid #ddd;  
+    padding: 15px;  
+    box-sizing: border-box;  
+    max-width: 400px; 
+    margin: 0 auto; 
     border-radius: 15px;
 }
 
 h2 {
-    font-size: 18px;  /* Ajustar el tamaño de la fuente del encabezado */
+    font-size: 18px;  
 }
 
 p {
-    font-size: 18px;  /* Ajustar el tamaño de la fuente del párrafo */
+    font-size: 18px;  
 }
 
-/* Reglas de medios para pantallas más pequeñas */
 @media screen and (max-width: 767px) {
     .total-details-container {
-        max-height: 100px; /* Reducir la altura máxima en pantallas pequeñas */
-        overflow-y: auto; /* Agregar scroll vertical si es necesario */
-        border-radius: 10px; /* Eliminar el redondeo de bordes en pantallas pequeñas si es necesario */
-        margin: 0; /* Eliminar el margen en pantallas pequeñas si es necesario */
+        max-height: 100px; 
+        overflow-y: auto; 
+        border-radius: 10px; 
+        margin: 0; 
     }
 
     .total-details-container h2 {
-        font-size: 15px; /* Ajustar el tamaño de la fuente del encabezado en pantallas pequeñas */
+        font-size: 15px; 
     }
 
     .total-details-container p {
-        font-size: 13px; /* Ajustar el tamaño de la fuente del párrafo en pantallas pequeñas */
+        font-size: 13px; 
     }
 }

@@ -1,6 +1,6 @@
-// ProductTable.js
+
 import React from 'react';
-import './ProductTable.css';  // Importar el archivo de estilos CSS
+import './ProductTable.css';  
 
 const ProductTable = ({ selectedProducts, updateProductQuantity, removeProduct }) => {
   const calculateSubtotal = (quantity, price) => {
@@ -8,10 +8,10 @@ const ProductTable = ({ selectedProducts, updateProductQuantity, removeProduct }
   };
 
   return (
-    <div className="product-table-container"> {/* Agregar una clase para el contenedor principal */}
+    <div className="product-table-container"> 
       <h2 className="table-title">PRODUCTOS SELECCIONADOS</h2>
-      <div className="table-wrapper"> {/* Agregar un contenedor con estilos de envoltura */}
-        <table className="styled-table table-border "> {/* Agregar una clase para aplicar estilos a la tabla */}
+      <div className="table-wrapper"> 
+        <table className="styled-table table-border ">
           <thead>
             <tr>
               <th>CANTIDAD</th>
@@ -25,7 +25,7 @@ const ProductTable = ({ selectedProducts, updateProductQuantity, removeProduct }
             {selectedProducts.map((product) => (
               <tr key={product.id}>
                 <td>
-                  <button className='button-change'
+                  <button id='menos' className='button-change'
                     onClick={() =>
                       updateProductQuantity(product.id, Math.max(1, product.quantity - 1))
                     }
@@ -33,7 +33,7 @@ const ProductTable = ({ selectedProducts, updateProductQuantity, removeProduct }
                     -
                   </button>
                   <span className="quantity-number">{product.quantity}</span>
-                  <button className='button-change'
+                  <button id='mas' className='button-change'
                     onClick={() => updateProductQuantity(product.id, product.quantity + 1)}
                   >
                     +

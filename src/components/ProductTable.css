@@ -26,18 +26,18 @@
 }
 
 .styled-table th {
-    background-color: #3498db;
+    background-color: #00233b;
     color: #fff;
     font-size: 18px;
 }
 
 .styled-table td {
-    background-color: #fff;
-    font-size: 16px;
+    background-color: #7c919f ;
+    font-size: 16px;color: #fff;
 }
 
 .styled-table tr {
-    background-color: #3498db;
+    background-color: #4f6a7d;
     display: table;
     width: 100%;
     box-sizing: border-box;
@@ -56,7 +56,6 @@
 
 .button-change {
     cursor: pointer;
-    background-color: #3498db;
     color: #fff;
     padding: 8px 12px;
     border: none;
@@ -66,8 +65,17 @@
     margin-left: 10px;
 }
 
-button:hover {
-    background-color: #2073af;
+#mas{
+    background-color: rgb(53, 143, 54);
+}
+#mas:hover {
+    background-color: #189d20;
+}
+#menos{
+    background-color: #ad1111c1;
+}
+#menos:hover{
+    background-color: #f62727;
 }
 
 .table-wrapper {
@@ -75,7 +83,7 @@ button:hover {
     overflow-y: auto;
     margin: 20px auto;
     padding: 10px;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     width: 80%;
 }
@@ -93,7 +101,7 @@ button:hover {
 .delete-button:hover {
     background-color: #f62727;
 }
-/* ... Código anterior ... */
+
 
 @media screen and (max-width: 767px) {
     .styled-table th,
@@ -111,8 +119,8 @@ button:hover {
 
     .styled-table td {
         font-size: 10px;
-        width: 20%; /* Ajustar el ancho de la columna de cantidad en pantallas pequeñas */
-        padding-left: 5px; /* Ajustar el padding izquierdo en pantallas pequeñas */
+        width: 20%; 
+        padding-left: 5px; 
     }
 
     .table-wrapper {
@@ -124,7 +132,7 @@ button:hover {
     .styled-table .delete-button {
         padding: 4px 6px;
         font-size: 7px;
-        margin: 0 2px; /* Ajustar el margen entre los botones en pantallas pequeñas */
+        margin: 0 2px; 
     }
 
     .table-title {

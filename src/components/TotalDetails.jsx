@@ -1,4 +1,4 @@
-// TotalDetails.js
+
 import React from 'react';
 import './TotalDetails.css'
 

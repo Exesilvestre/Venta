@@ -1,7 +1,7 @@
 .available-products-container {
-    background-color: #00233b;
+    background-color: #3381b5;
     color: #fff;
-    border: px solid #ddd;
+    
     padding: 15px;
     box-sizing: border-box;
     max-width: 400px;
@@ -11,29 +11,28 @@
 
 
 select {
-    width: 90%; 
-    padding: 8px;
+    width: 100%; 
+    padding: 8px; 
     font-size: 16px; 
-    background-color: #81c8f7
 }
 
 h2 {
-    font-size: 18px; 
+    font-size: 18px; /* Ajustar el tamaño de la fuente del encabezado */
 }
 
-
+/* Reglas de medios para pantallas más pequeñas */
 @media only screen and (max-width: 767px) {
     .available-products-container {
-        max-width: none; 
-        border-radius: 10px; 
-         
+        max-width: none; /* Eliminar el límite máximo de ancho en pantallas pequeñas */
+        border-radius: 10px; /* Eliminar el redondeo de bordes en pantallas pequeñas si es necesario */
+         /* Eliminar el margen en pantallas pequeñas si es necesario */
     }
     .available-products-container select {
-        width: 50%; 
-        font-size: 12px;
+        width: 50%; /* Hacer que el selector ocupe el 80% del ancho del contenedor en pantallas pequeñas */
+        font-size: 12px; /* Ajustar el tamaño de la fuente del selector en pantallas pequeñas */
     }
     
     .available-products-container h2 {
-        font-size: 15px; 
+        font-size: 15px; /* Ajustar el tamaño de la fuente del encabezado en pantallas pequeñas */
     }
 }

@@ -1,38 +1,42 @@
-.App {
+.app-container {
   text-align: center;
+  margin: 20px auto 50px auto; /* Añadir margen inferior para dar espacio al contenedor inferior */
+  position: relative;
+  border: 2px #ddd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bottom-container {
+  position: fixed;
+  bottom: 120px; /* Alinear un poco más arriba */
+  width: calc(100% - 2px); /* Utilizar calc para ajustar el ancho restando 2px por los bordes izquierdo y derecho */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around; /* Distribuir el espacio uniformemente entre los elementos */
+  padding: 15px; /* Aumentar el espaciado interno */
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.available-products-container,
+.total-details-container {
+  width: 48%;  /* Ancho del 48% para dejar espacio entre los elementos */
+  text-align: center;  /* Centrar el texto dentro de los contenedores */
+  padding: 15px;  /* Ajustar el espaciado interno */
+  box-sizing: border-box;  /* Incluir el padding en el cálculo del tamaño del elemento */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+  .bottom-container {
+    flex-direction: column; /* Cambiar la dirección del flexbox a columna en pantallas pequeñas */
+    align-items: center; /* Centrar los elementos en el eje transversal */
+    bottom: 0; /* Alinear al borde inferior en pantallas pequeñas */
+    padding: 10px; /* Ajustar el espaciado interno en pantallas pequeñas */
   }
-  to {
-    transform: rotate(360deg);
+
+  .available-products-container,
+  .total-details-container {
+    width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    margin-top: 10px; /* Añadir espacio entre los contenedores y la tabla en pantallas pequeñas */
+    margin-bottom: 20px;
   }
+  
+
 }

@@ -45,22 +45,17 @@ body, html {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    margin: 0;
-  }
-
   .bottom-container {
     flex-direction: column;
     align-items: center;
     bottom: 0;
-    padding: 0px 60px 130px 40px;
-    margin-top: 0; /* Asegúrate de que no haya un margen superior en el bottom-container */
+    padding: 10px;
   }
 
   .available-products-container,
   .total-details-container {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px; /* Reduzca el margen inferior si es necesario */
+    margin-bottom: 20px;
   }
 }

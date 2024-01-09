@@ -13,22 +13,16 @@ body, html {
   text-align: center;
   margin: 20px auto 50px auto;
   position: relative;
- 
   background-color: rgba(0, 0, 0, 0.89);
-  padding: 15px; /* Añadir padding si es necesario */
+  padding: 15px;
   box-sizing: border-box;
 }
 
 .bottom-container {
-  position: fixed;
-  bottom: 120px;
-  width: calc(100% - 2px);
   display: flex;
   justify-content: space-around;
   padding: 15px;
   box-sizing: border-box;
-  
-  
 }
 
 .available-products-container,
@@ -37,18 +31,12 @@ body, html {
   text-align: center;
   padding: 15px;
   box-sizing: border-box;
-  
-}
-
-:last-child {
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
   .bottom-container {
     flex-direction: column;
     align-items: center;
-    bottom: 0;
     padding: 10px 30px 10px 10px;
     margin-right: 20px;
   }
@@ -58,6 +46,5 @@ body, html {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    
   }
 }

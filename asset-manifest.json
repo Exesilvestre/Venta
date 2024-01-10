@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Venta-ReactJs/static/css/main.d341686a.css",
+    "main.css": "/Venta-ReactJs/static/css/main.d7b4d720.css",
     "main.js": "/Venta-ReactJs/static/js/main.3d83d2e0.js",
     "static/js/787.2785ac2d.chunk.js": "/Venta-ReactJs/static/js/787.2785ac2d.chunk.js",
     "index.html": "/Venta-ReactJs/index.html",
-    "main.d341686a.css.map": "/Venta-ReactJs/static/css/main.d341686a.css.map",
+    "main.d7b4d720.css.map": "/Venta-ReactJs/static/css/main.d7b4d720.css.map",
     "main.3d83d2e0.js.map": "/Venta-ReactJs/static/js/main.3d83d2e0.js.map",
     "787.2785ac2d.chunk.js.map": "/Venta-ReactJs/static/js/787.2785ac2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d341686a.css",
+    "static/css/main.d7b4d720.css",
     "static/js/main.3d83d2e0.js"
   ]
 }
